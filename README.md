@@ -1,16 +1,97 @@
-# React + Vite
+# Dragon Ball Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado para el examen de React. Es una aplicación web que muestra personajes de Dragon Ball usando su API pública.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- Vite
+- React Router DOM
+- Axios
+- CSS3
 
-## React Compiler
+## Instalación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clonar el repositorio:
+```bash
+git clone https://github.com/iam127/Examen-03_Matias_Galvan_Guerrero.git
+cd dragonball-react
+```
 
-## Expanding the ESLint configuration
+Instalar dependencias:
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ejecutar el proyecto:
+```bash
+npm run dev
+```
+
+El proyecto se abrirá en `http://localhost:5173`
+
+## Estructura
+```
+src/
+├── pages/
+│   ├── Home.jsx       # Página principal
+│   └── Entities.jsx   # Lista de personajes
+├── App.jsx            # Rutas principales
+└── App.css            # Estilos
+```
+
+## Funcionalidades
+
+**Página Home (/):**
+- Título y descripción del proyecto
+- Muestra 6 personajes principales
+- Cards con imagen y nombre
+
+**Página Entities (/entities):**
+- Lista completa de 20 personajes
+- Cada personaje muestra:
+  - Nombre
+  - Raza
+  - Ki
+  - Género
+
+## API
+
+Uso la API pública de Dragon Ball: https://dragonball-api.com
+
+Endpoints usados:
+- `/api/characters?limit=6` para la página principal
+- `/api/characters?limit=20` para la lista completa
+
+## Características técnicas
+
+- React Router para la navegación
+- Axios para las peticiones HTTP
+- useState y useEffect para manejar el estado
+- CSS personalizado con gradientes
+- Diseño responsive
+
+## Deploy
+
+Deploy: [Agregar enlace cuando esté listo]
+
+Video: [Agregar enlace cuando esté listo]
+
+## Autor
+
+Matias Galvan Guerrero - Examen React 2025
+
+## Notas
+
+Proyecto realizado como parte del examen práctico de React. Cumple con todos los requisitos solicitados:
+
+- Configuración con Vite 
+- Consumo de API 
+- Ruta Home con hero 
+- Ruta Entities con propiedades 
+- React Router 
+- Estilos personalizados 
+
+---
+
+Repositorio: https://github.com/iam127/Examen-03_Matias_Galvan_Guerrero
