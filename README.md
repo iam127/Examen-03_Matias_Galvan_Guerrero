@@ -10,16 +10,20 @@ Proyecto desarrollado para el examen de React. Es una aplicación web que muestr
 - Axios
 - CSS3
 
-## Netlify
+## Enlaces
 
-Link: examen-3-matias-galvan-guerrero.netlify.app
+**Deploy Netlify:** https://examen-3-matias-galvan-guerrero.netlify.app
+
+**Video YouTube:** https://youtu.be/37dYDyyE0Dw
+
+**Repositorio:** https://github.com/iam127/Examen-03_Matias_Galvan_Guerrero
 
 ## Instalación
 
 Clonar el repositorio:
 ```bash
 git clone https://github.com/iam127/Examen-03_Matias_Galvan_Guerrero.git
-cd dragonball-react
+cd Examen-03_Matias_Galvan_Guerrero
 ```
 
 Instalar dependencias:
@@ -34,68 +38,58 @@ npm run dev
 
 El proyecto se abrirá en `http://localhost:5173`
 
-## Estructura
+## Estructura del Proyecto
 ```
-src/
-├── pages/
-│   ├── Home.jsx       # Página principal
-│   └── Entities.jsx   # Lista de personajes
-├── App.jsx            # Rutas principales
-└── App.css            # Estilos
+dragonball-react/
+├── src/
+│   ├── pages/
+│   │   ├── Home.jsx       # Página principal con hero
+│   │   └── Entities.jsx   # Lista de personajes
+│   ├── App.jsx            # Rutas principales
+│   ├── App.css            # Estilos globales
+│   └── main.jsx           # Punto de entrada
+├── package.json
+└── README.md
 ```
 
 ## Funcionalidades
 
 **Página Home (/):**
-- Título y descripción del proyecto
-- Muestra 6 personajes principales
+- Hero con título y descripción del proyecto
+- Muestra 6 personajes destacados
 - Cards con imagen y nombre
+- Efectos hover
 
 **Página Entities (/entities):**
 - Lista completa de 20 personajes
 - Cada personaje muestra:
   - Nombre
   - Raza
-  - Ki
+  - Ki (nivel de poder)
   - Género
 
-## API
+## API Utilizada
 
-Uso la API pública de Dragon Ball: https://dragonball-api.com
+Dragon Ball API: https://dragonball-api.com
 
 Endpoints usados:
-- `/api/characters?limit=6` para la página principal
-- `/api/characters?limit=20` para la lista completa
+- `/api/characters?limit=6` - Personajes para Home
+- `/api/characters?limit=20` - Todos los personajes para Entities
 
-## Características técnicas
+## Características Técnicas
 
-- React Router para la navegación
-- Axios para las peticiones HTTP
-- useState y useEffect para manejar el estado
-- CSS personalizado con gradientes
-- Diseño responsive
+- React Router DOM para navegación entre rutas
+- Axios para peticiones HTTP a la API
+- Hooks: useState y useEffect para manejo de estado
+- CSS personalizado con gradientes y animaciones
+- Diseño responsive (desktop, tablet, mobile)
+- Loaders mientras carga la información
 
-## Deploy
-
-Deploy: [Agregar enlace cuando esté listo]
-
-Video: [Agregar enlace cuando esté listo]
+## Compilar para Producción
+```bash
+npm run build
+```
 
 ## Autor
 
-Matias Galvan Guerrero - Examen React 2025
-
-## Notas
-
-Proyecto realizado como parte del examen práctico de React. Cumple con todos los requisitos solicitados:
-
-- Configuración con Vite 
-- Consumo de API 
-- Ruta Home con hero 
-- Ruta Entities con propiedades 
-- React Router 
-- Estilos personalizados 
-
----
-
-Repositorio: https://github.com/iam127/Examen-03_Matias_Galvan_Guerrero
+**Matias Galvan Guerrero**
